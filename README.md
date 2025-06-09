@@ -18,8 +18,10 @@ Run the server:
 npm install
 npm run dev
 ```
+<!-- 
+![test images](https://github.com/jorditer/learn-cicd-typescript-starter/tree/main/actions/workflows/ci.yml/badge.svg) -->
 
-![test images](https://github.com/jorditer/learn-cicd-typescript-starter/tree/main/actions/workflows/ci.yml/badge.svg)
+[![ci](https://github.com/jorditer/learn-cicd-typescript-starter/actions/workflows/ci.yml/badge.svg)](https://github.com/jorditer/learn-cicd-typescript-starter/actions/workflows/ci.yml)
 
 _This starts the server in non-database mode._ It will serve a simple webpage at `http://localhost:8080`.
 
