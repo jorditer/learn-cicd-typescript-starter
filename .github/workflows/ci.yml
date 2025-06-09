@@ -1,22 +1,28 @@
-name: ci
+name: ci # Workflow Name
 
-on:
+on:      # what triggers the workflow
   pull_request:
     branches: [main]
 
-jobs:
+jobs:	 # List of jobs that make up the workflow
   tests:
     name: Tests
     runs-on: ubuntu-latest
 
-    steps:
+    steps: # List of steps that make up the jov
       - name: Check out code
         uses: actions/checkout@v4
 
       - name: Set up Node
-        uses: actions/setup-node@v4
-        with:
+        uses: actions/setup-node@v4 # uses key specifies the predefined Github action to use
+        with: 						# with key specifies the inputs to the action
           node-version: 18
 
-      - name: Checking node
-        run: node --version
+      # - name: Checking node
+        # run: node --version			# run key refers to a custom command
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: "Runs tests"
+        run: npm run test
