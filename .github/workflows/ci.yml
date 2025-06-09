@@ -27,5 +27,9 @@ jobs:	 # List of jobs that make up the workflow
       - name: "Runs tests"
         run: npm run test -- --coverage
 
+  style:
+    name: Style Check
+    runs-on: ubuntu-latest
+    steps:
       - name: "Style"
         run: npm run format:check
