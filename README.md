@@ -19,7 +19,7 @@ npm install
 npm run dev
 ```
 
-![test images](https://github.com/jorditer/<REPOSITORY>/actions/workflows/<WORKFLOW_FILE>/badge.svg)
+![test images](https://github.com/jorditer/learn-cicd-typescript-starter/tree/main/actions/workflows/ci.yml/badge.svg)
 
 _This starts the server in non-database mode._ It will serve a simple webpage at `http://localhost:8080`.
 
