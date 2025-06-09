@@ -46,4 +46,4 @@ jobs:	 # List of jobs that make up the workflow
         run: npm run format:check
       
       - name: "linting"
-        run: npm run lint
+        run: npm run lint -- --max-warnings=0
