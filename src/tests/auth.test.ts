@@ -11,7 +11,6 @@ const person = {
 //     expect(getAPIKey(" ")).toBeDefined();
 //   });
 
-
 describe("person", () => {
   test("person is defined", () => {
     expect(person).toBeDefined();
