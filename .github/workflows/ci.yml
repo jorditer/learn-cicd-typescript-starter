@@ -9,7 +9,7 @@ jobs:	 # List of jobs that make up the workflow
     name: Tests
     runs-on: ubuntu-latest
 
-    steps: # List of steps that make up the jov
+    steps: # List of steps that make up the job
       - name: Check out code
         uses: actions/checkout@v4
 
