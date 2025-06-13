@@ -1,5 +1,5 @@
 import { describe, expect, test } from "vitest";
-import { getAPIKey } from "src/api/auth";
+// import { getAPIKey } from "src/api/auth";
 
 const person = {
   isActive: true,
@@ -10,7 +10,6 @@ const person = {
 //   test("If not request it returns null", () => {
 //     expect(getAPIKey(" ")).toBeDefined();
 //   });
-
 
 describe("person", () => {
   test("person is defined", () => {

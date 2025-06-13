@@ -9,7 +9,7 @@ jobs:	 # List of jobs that make up the workflow
     name: Tests
     runs-on: ubuntu-latest
 
-    steps: # List of steps that make up the jov
+    steps: # List of steps that make up the job
       - name: Check out code
         uses: actions/checkout@v4
 
@@ -26,3 +26,24 @@ jobs:	 # List of jobs that make up the workflow
 
       - name: "Runs tests"
         run: npm run test -- --coverage
+
+  style:
+    name: Style 
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v4
+      
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+      
+      - name: Install dependencies
+        run: npm ci
+        
+      - name: "Style"
+        run: npm run format:check
+      
+      - name: "linting"
+        run: npm run lint -- --max-warnings=0
